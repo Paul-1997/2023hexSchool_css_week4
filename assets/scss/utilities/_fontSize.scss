@@ -1,0 +1,27 @@
+.fz{
+    &-md-base,
+    &-sm-base{
+        font-size: 1rem;
+    }
+}
+
+@each $size,$value in $fz{
+    .fz-#{$size}{
+        font-size: $value;
+    }
+}
+
+@include pad{
+    @each $key,$value in $fz{
+        .fz-md-#{$key}{
+            font-size: $value;
+        }
+    }
+}
+@include mobile{
+    @each $key,$value in $fz{
+        .fz-sm-#{$key}{
+            font-size: $value;
+        }
+    }
+}

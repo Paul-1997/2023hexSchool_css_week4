@@ -1,0 +1,18 @@
+.faq{
+    h2{
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+}
+.faq-list{
+    li:not(:last-child){
+        margin-bottom: 32px;
+        @include mobile{
+            margin-bottom: 24px;
+        }
+    }
+    h3{
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+}

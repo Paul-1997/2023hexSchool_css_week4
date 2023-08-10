@@ -1,4 +1,40 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.logo {
+	a {
+		display: block;
+		background-image: url(../images/logo-white.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		@include hide_h1;
+		width: 80px;
+		height: 48px;
+
+		@include hover {
+			filter: contrast(55%);
+		}
+	}
+}
+.header-nav {
+	gap: 64px;
+	li {
+		@include hover {
+			@include hover-underline;
+		}
+	}
+}
+
+@include mobile {
+	.header-content {
+		padding: 0;
+		max-width: 100%;
+	}
+	.header-nav {
+		width: 100%;
+		gap: 0;
+		li {
+			width: 50%;
+			text-align: center;
+			border: 1px solid $white;
+		}
+	}
 }

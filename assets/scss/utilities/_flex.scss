@@ -1,0 +1,20 @@
+
+@each $property, $property-list in $flex-map {
+
+    @each $key,$value in $property-list{
+        .#{$property}-#{$key}{
+            #{$property} : $value;
+        }
+        @include pad{
+            .#{$property}-md-#{$key}{
+                #{$property} : $value;
+            }
+        }
+        @include mobile{
+            .#{$property}-sm-#{$key}{
+                #{$property} : $value;
+            }
+        }
+    }
+}
+

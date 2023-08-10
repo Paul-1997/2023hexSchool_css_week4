@@ -1,0 +1,40 @@
+//color
+@each $key , $value in $colors{
+    .bg-#{$key}{
+        background-color: $value;
+    }
+    .text-#{$key}{
+        color: $value;
+    }
+}
+
+//fw
+@each $key , $value in $font-weight{
+    .fw-#{$key}{
+        font-weight: $value;
+    }
+}
+.italic{
+    font-style: italic;
+}
+.text-left{
+    text-align-last: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-inline: 12px;
+    @include pad {
+        max-width: 944px;
+    }
+    @include mobile {
+        max-width: 762px;
+    }
+}

@@ -1,0 +1,86 @@
+
+.store-selector{
+    font-size: 24px;
+    display: block;
+    margin-bottom: 40px;
+    select{
+        vertical-align: middle;
+        margin-left: 12px;
+        padding: 6px 12px;
+        font-size: 18px;
+        line-height: 26px;
+        color:#495057;
+        width: 304px;
+        border: 1px solid #CED4DA;
+    }  
+}
+
+.store-card-group{
+    flex-wrap: wrap;
+    gap:24px;
+    .store-card{
+        width: calc((100% - 2 * 24px) / 3) ;
+    }
+}
+.store-card-item{
+    --bd-color: #00000020;
+    border: 1px solid var(--bd-color);
+    .card-name,.card-content{
+        border-bottom: 1px solid var(--bd-color);
+        padding-inline:24px;
+    }
+    .card-name{
+        font-size: 24px;
+        padding-block:8px;
+    }
+    .card-content{
+        padding-block:16px;
+
+        li{
+            align-items: center;
+            &:last-child span{//store on
+                align-self: start;
+            }
+            &:not(:last-child){
+                margin-bottom: 8px;
+            }
+        }
+        p{  
+            font-size: 20px;
+        }
+        span{
+            margin-right: 8px;
+        }
+    }
+}
+.card-button a{
+    display: block;
+    border: none;
+    padding-block:16px;
+    font-size: 19px;
+    background: black;
+    color:white;
+
+    @include hover{
+        opacity: 0.75;
+        transition: opacity .5s;
+    }
+}
+
+@include pad{
+    .store-card-group .store-card{
+        width: calc(50% - 24px);
+    }
+}
+@include mobile{
+    .store-selector{
+        font-size: 16px;
+        select{
+            margin-left: 8px;
+            width: min(278px,66vw); //310px
+        }
+    }
+    .store-card-group .store-card{
+        width: 100%;
+    }
+}

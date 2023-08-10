@@ -1,4 +1,48 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer-content {
+	border-bottom: 1px solid $white;
+}
+
+.footer-nav {
+	gap: 48px;
+	li {
+		@include hover {
+			@include hover-underline;
+		}
+	}
+}
+.social-icons {
+	gap: 32px;
+	@include mobile {
+		gap: 8px;
+	}
+	img {
+		width: 48px;
+		aspect-ratio: 1;
+		@include hover {
+			@include hover-lift;
+		}
+
+		@include pad {
+			width: 40px;
+		}
+
+		@include mobile {
+			width: 24px;
+		}
+	}
+}
+.contact-method {
+	a {
+		@include hover {
+			@include hover-clr-gold;
+		}
+	}
+	span {
+		vertical-align: middle;
+	}
+}
+.policy a {
+	@include hover {
+		@include hover-underline;
+	}
 }

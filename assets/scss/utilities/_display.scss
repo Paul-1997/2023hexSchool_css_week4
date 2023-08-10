@@ -1,0 +1,16 @@
+
+@each $item in $display{
+	.d-#{$item}{
+		display: $item;
+	}
+	@include pad {
+		.d-md-#{$item}{
+			display: $item;
+		}
+	}
+	@include mobile {
+		.d-sm-#{$item}{
+			display: $item;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+// base
+@import "./base/_reset.scss";
+@import "./base/_base.scss";
+
+//utils
+@import './utilities/_mixin.scss';
+@import './utilities/_variable.scss';
+@import './utilities/_utils.scss';
+@import './utilities/_hover.scss';
+@import './utilities/_flex.scss';
+@import './utilities/_display.scss';
+@import './utilities/_fontSize.scss';
+@import './utilities/_spacing.scss';
+//component
+
+
+// layout
+@import './layout/_header.scss';
+@import './layout/_footer.scss';
+
+
+// page
+// @import './pages/_home.scss';
+// @import './pages/_products.scss';
+// @import './pages/_faq.scss';
+// @import './pages/_stores.scss';
+// @import './pages/_store_TaipeiZC.scss';
+// @import './pages/_blogs.scss';
+// @import './pages/_blog_Valentine.scss';
+

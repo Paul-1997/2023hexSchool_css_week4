@@ -1,0 +1,141 @@
+@each $key, $value in $space {
+	.p-#{$key} {
+		padding: $value;
+	}
+	.px-#{$key} {
+		padding-inline: $value;
+	}
+	.py-#{$key} {
+		padding-block: $value;
+	}
+	.pt-#{$key} {
+		padding-top: $value;
+	}
+	.ps-#{$key} {
+		padding-left: $value;
+	}
+	.pe-#{$key} {
+		padding-right: $value;
+	}
+	.pb-#{$key} {
+		padding-bottom: $value;
+	}
+	//margin
+	.m-#{$key} {
+		margin: $value;
+	}
+	.mx-#{$key} {
+		margin-inline: $value;
+	}
+	.my-#{$key} {
+		margin-block: $value;
+	}
+	.mt-#{$key} {
+		margin-top: $value;
+	}
+	.ms-#{$key} {
+		margin-left: $value;
+	}
+	.me-#{$key} {
+		margin-right: $value;
+	}
+	.mb-#{$key} {
+		margin-bottom: $value;
+	}
+}
+
+@include pad {
+	@each $key, $value in $space {
+		.p-md-#{$key} {
+			padding: $value;
+		}
+		.px-md-#{$key} {
+			padding-inline: $value;
+		}
+		.py-md-#{$key} {
+			padding-block: $value;
+		}
+		.pt-md-#{$key} {
+			padding-top: $value;
+		}
+		.ps-md-#{$key} {
+			padding-left: $value;
+		}
+		.pe-md-#{$key} {
+			padding-right: $value;
+		}
+		.pb-md-#{$key} {
+			padding-bottom: $value;
+		}
+		//margin
+		.m-md-#{$key} {
+			margin: $value;
+		}
+		.mx-md-#{$key} {
+			margin-inline: $value;
+		}
+		.my-md-#{$key} {
+			margin-block: $value;
+		}
+		.mt-md-#{$key} {
+			margin-top: $value;
+		}
+		.ms-md-#{$key} {
+			margin-left: $value;
+		}
+		.me-md-#{$key} {
+			margin-right: $value;
+		}
+		.mb-md-#{$key} {
+			margin-bottom: $value;
+		}
+	}
+}
+
+@include mobile {
+	@each $key, $value in $space {
+		.p-sm-#{$key} {
+			padding: $value;
+		}
+		.px-sm-#{$key} {
+			padding-inline: $value;
+		}
+		.py-sm-#{$key} {
+			padding-block: $value;
+		}
+		.pt-sm-#{$key} {
+			padding-top: $value;
+		}
+		.ps-sm-#{$key} {
+			padding-left: $value;
+		}
+		.pe-sm-#{$key} {
+			padding-right: $value;
+		}
+		.pb-sm-#{$key} {
+			padding-bottom: $value;
+		}
+		//margin
+		.m-sm-#{$key} {
+			margin: $value;
+		}
+		.mx-sm-#{$key} {
+			margin-inline: $value;
+		}
+		.my-sm-#{$key} {
+			margin-block: $value;
+		}
+		.mt-sm-#{$key} {
+			margin-top: $value;
+		}
+		.ms-sm-#{$key} {
+			margin-left: $value;
+		}
+		.me-sm-#{$key} {
+			margin-right: $value;
+		}
+		.mb-sm-#{$key} {
+			margin-bottom: $value;
+		}
+	}
+}

@@ -1,0 +1,170 @@
+.page-router {
+	margin-block: 24px 8px;
+	li {
+		position: relative;
+		display: inline-block;
+		padding-right: 8px;
+
+		@include hover {
+			color: red;
+		}
+		&::after {
+			content: '\/';
+			display: inline-block;
+			position: absolute;
+			inset: 0;
+			transform: translateX(calc(100% - 4px));
+		}
+
+		&:last-child {
+			padding-right: 0;
+			color: map-get($colors, red);
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+.page-tags {
+	margin-bottom: 8px;
+	font-size: 24px;
+	li {
+		display: inline-block;
+
+		&:not(:last-child) {
+			margin-right: 15px;
+		}
+		@include hover {
+			color: red;
+		}
+	}
+
+	@include mobile {
+		font-size: 16px;
+	}
+}
+
+.blog-page {
+	gap: 24px;
+	&-content {
+		width: min(67%, 856px);
+		&-title {
+			font-size: 48px;
+		}
+		&-subtitle {
+			font-size: 24px;
+			margin-bottom: 16px;
+		}
+		@include mobile {
+			width: 100%;
+
+            &-title{
+                font-size: 24px;
+            }
+            &-subtitle{
+                font-size: 16px;
+            }
+		}
+	}
+	.social-tags {
+		flex-grow: 1;
+		&-title {
+			font-size: 32px;
+			span {
+				font-size: 48px;
+				vertical-align: middle;
+				margin-right: 12px;
+			}
+		}
+		&-list {
+			li {
+				font-size: 24px;
+				:not(:last-child) {
+					margin-right: 24px;
+				}
+				&:not(:last-child) {
+					margin-bottom: 4px;
+				}
+				a {
+					@include hover {
+						color: red;
+					}
+				}
+			}
+		}
+
+		@include mobile {
+			display: none;
+		}
+	}
+}
+.page-article {
+	img {
+		margin-bottom: 16px;
+		@include mobile {
+			margin-bottom: 8px;
+		}
+	}
+	p {
+		color: #555555;
+		&:not(:last-child) {
+			margin-bottom: 40px;
+
+			@include pad {
+				margin-bottom: 24px;
+			}
+			@include mobile {
+				margin-bottom: 16px;
+			}
+		}
+	}
+	margin-bottom: 40px;
+	@include mobile {
+		margin-bottom: 64px;
+	}
+}
+
+.social-share {
+	padding-bottom: 16px;
+	border-bottom: 1px solid #707070;
+	&-title {
+		margin-right: 16px;
+	}
+	&-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 16px;
+		img {
+			width: 24px;
+			aspect-ratio: 1;
+			@include hover {
+				scale: 1.1;
+			}
+		}
+	}
+}
+.other-article {
+	margin-block: 24px 80px;
+	justify-content: space-between;
+
+	.pre-article,
+	.next-article {
+		:first-child {
+			margin-right: 12px;
+		}
+		align-items: center;
+		@include hover {
+			color: hsl(0 80 55);
+			:not(.material-icons-outlined) {
+				text-decoration: underline wavy;
+				text-underline-offset: 4px;
+			}
+		}
+	}
+}
+@include pad {
+	.social-share,
+	.other-article {
+		display: none;
+	}
+}
