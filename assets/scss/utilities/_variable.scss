@@ -1,115 +1,110 @@
 $white: #fff;
 $black: #000;
-$red : #aa0601;
-$red-dark-100:#9F1213;
+$red: #aa0601;
+$red-dark-100: #9f1213;
 $red-dark-200: #650300;
-$pink : #FBF2F2;
-$gray-100:#F2F2F2;
-$gray-200 : #DCDCDC;
-$gray-300 : #DEE2E6;
-$gray-400 : #00000020;
-$gray-500 : #00000029;
-$gray-600 : #CED4DA;
-$gray-700 : #707070;
-$gray-800:#555555;
-$gray-900:#495057;
-$brown:#5F3E2D;
-$orange:#B75929;
+$pink: #fbf2f2;
+$gray-100: #f2f2f2;
+$gray-200: #dcdcdc;
+$gray-300: #dee2e6;
+$gray-400: #00000020;
+$gray-500: #00000029;
+$gray-600: #ced4da;
+$gray-700: #707070;
+$gray-800: #555555;
+$gray-900: #495057;
+$brown: #5f3e2d;
+$orange: #b75929;
 $gold: hsl(60 90 50);
-$lightgreen : lightgreen;
-$colors :(
-    primary: $red,
-    secondary: $red-dark-200,
-    pink: $pink,
-    gray-light: $gray-700,
-    gray-mid: $gray-800,
-    gray-dark: $gray-900,
-    white:$white,
-    black:$black
-
+$lightgreen: lightgreen;
+$colors: (
+	primary: $red,
+	secondary: $red-dark-200,
+	pink: $pink,
+	gray-light: $gray-700,
+	gray-mid: $gray-800,
+	gray-dark: $gray-900,
+	white: $white,
+	black: $black,
 );
 //product
 $product-theme-1: $brown;
 $product-theme-2: $orange;
 
-
-
-
+$fz-base: 1rem;
 //font
-$fz:(
-    sm : .875rem, //14px
-    md: 1rem, //16px
-    lg :  1.25rem, //20px
-    xl :  1.5rem, //24px
-    2xl :  2rem, //32px
-    3xl :  2.25rem, //36px
-    4xl :  2.5rem, //40px
-    5xl :  3rem, //48px
-    6xl :  4rem, //64px
+$fz: (
+	sm: $fz-base * 0.875,//14px
+	md: $fz-base * 1,//16px
+	lg: $fz-base * 1.25,//20px
+	xl: $fz-base * 1.5,//24px
+	2xl: $fz-base * 2,//32px
+	3xl: $fz-base * 2.25,//36px
+	4xl: $fz-base * 2.5,//40px
+	5xl: $fz-base * 3,//48px
+	6xl: $fz-base * 4,//64px
 );
 
 $font-weight: (
-    medium: 500,
-    bold: 700,
-    black: 900
+	medium: 500,
+	bold: 700,
+	black: 900,
 );
 
 //spacing
-$spacer : 8px;
-$space:(
-    0: 0,
-    1: $spacer * .5,//4
-    2: $spacer * .75,//6
-    3: $spacer * 1, //8
-    4: $spacer * 1.5, //12
-    5: $spacer * 2, //16
-    6: $spacer * 3, //24
-    7: $spacer * 4, //32
-    8: $spacer * 5, //40
-    9: $spacer * 6, //48
-    10: $spacer * 8, //64
-    11: $spacer * 10, //80
-    12: $spacer *12, //96
-    13: $spacer *15.5//124
+$spacer: 8px;
+$space: (
+	0: 0,
+	1: $spacer * 0.5,//4
+	2: $spacer * 0.75,//6
+	3: $spacer * 1,//8
+	4: $spacer * 1.5,//12
+	5: $spacer * 2,//16
+	6: $spacer * 3,//24
+	7: $spacer * 4,//32
+	8: $spacer * 5,//40
+	9: $spacer * 6,//48
+	10: $spacer * 8,//64
+	11: $spacer * 10,//80
+	12: $spacer * 12,//96
+	13: $spacer * 15.5 //124,
 );
 
 //flex
-$flex-map:(
-    "justify-content":(
-        start : flex-start,
-        end : flex-end,
-        center : center,
-        around : space-around,
-        between : space-between,
-        evenly : space-evenly    
-    ),
-    "align-items":(
-        start: flex-start,
-        end: flex-end,
-        center: center,
-        baseline: baseline,
-        stretch: stretch,
-        ),
-    "align-self":(
-        start: flex-start,
-        end: flex-end,
-        center: center,
-        baseline: baseline,
-        stretch: stretch,
-        ),
-    "flex-direction":(
-        row: row,
-        column: column,
-        row-reverse : row-reverse, 
-        column-reverse : column-reverse,
-    ),
-    "flex-wrap":(
-        wrap :wrap, 
-        nowrap : nowrap, 
-        wrap-reverse: wrap-reverse
-    )
+$flex-map: (
+	'justify-content': (
+		start: flex-start,
+		end: flex-end,
+		center: center,
+		around: space-around,
+		between: space-between,
+		evenly: space-evenly,
+	),
+	'align-items': (
+		start: flex-start,
+		end: flex-end,
+		center: center,
+		baseline: baseline,
+		stretch: stretch,
+	),
+	'align-self': (
+		start: flex-start,
+		end: flex-end,
+		center: center,
+		baseline: baseline,
+		stretch: stretch,
+	),
+	'flex-direction': (
+		row: row,
+		column: column,
+		row-reverse: row-reverse,
+		column-reverse: column-reverse,
+	),
+	'flex-wrap': (
+		wrap: wrap,
+		nowrap: nowrap,
+		wrap-reverse: wrap-reverse,
+	),
 );
-$display: block,inline-block,flex,inline-flex,grid,inline,none;
+$display: block, inline-block, flex, inline-flex, grid, inline, none;
 $box-shadow: 0px 2px 6px $gray-500;
-
-

@@ -5,7 +5,14 @@
 			color: red;
 		}
 	}
-
+.blog-nav{	
+	@include mobile{
+		gap: min(25px,4vw);
+	}
+	@include ex-mini{ //338會破版
+		display: none;
+	}
+}
 
 .breadcrumb li {
 	&:last-child {
