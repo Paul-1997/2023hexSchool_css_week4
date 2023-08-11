@@ -12,7 +12,8 @@
 @import './utilities/_fontSize.scss';
 @import './utilities/_spacing.scss';
 //component
-
+@import './component/_sectionTitle.scss';
+@import './component/_pagination.scss';
 
 // layout
 @import './layout/_header.scss';
@@ -22,9 +23,8 @@
 // page
 // @import './pages/_home.scss';
 // @import './pages/_products.scss';
-// @import './pages/_faq.scss';
 // @import './pages/_stores.scss';
 // @import './pages/_store_TaipeiZC.scss';
-// @import './pages/_blogs.scss';
-// @import './pages/_blog_Valentine.scss';
+@import './pages/_blogs.scss';
+@import './pages/_blog_Valentine.scss';
 

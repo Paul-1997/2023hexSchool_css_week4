@@ -34,7 +34,7 @@
 }
 
 //pseudo
-@mixin before($content,$position){
+@mixin before($content : "",$position : relative){
 	position: relative;
 	&::before{
 		content: $content;
@@ -42,7 +42,7 @@
 		@content;
 	}
 }
-@mixin after($content,$position){
+@mixin after($content : "",$position : relative){
 	position: relative;
 	&::after{
 		content: $content;
@@ -50,7 +50,7 @@
 		@content;
 	}
 }
-@mixin pseudo($content,$position){
+@mixin pseudo($content : "",$position : relative){
 	position: relative;
 	&::before,
 	&::after{

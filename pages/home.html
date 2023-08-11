@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/gif" href="../assets/images/fav-icon.ico" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/gif" href="../assets/images/fav-icon.ico" />
+		<title>Glasses</title>
+	</head>
+	<body>
+		<header class="header bg-primary text-white" id="header">
+			<div
+				class="header-content container d-flex justify-content-between align-items-center flex-direction-sm-column"
+			>
+				<h1 class="logo py-5 align-self-sm-start ps-sm-5">
+					<!--首頁h1 tag-->
+					<a href="./home.html">Glasses</a>
+				</h1>
+				<ul
+					class="header-nav d-flex justify-content-between flex-wrap-sm-wrap fz-lg fz-sm-md"
+				>
+					<li><a href="./products.html" class="d-block py-sm-4">系列鏡框</a></li>
+					<li><a href="./stores.html" class="d-block py-sm-4">門市據點</a></li>
+					<li><a href="./blogs.html" class="d-block py-sm-4">部落格</a></li>
+					<li><a href="./faq.html" class="d-block py-sm-4">常見問題</a></li>
+				</ul>
+			</div>
+		</header>
+		<main></main>
 
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <%- include('./layout/footer'); -%>
+		<%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+		<script type="module" src="../main.js"></script>
+	</body>
 </html>
-
-<!-- <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/home-header-sm.png" style="width: 300px;" alt="cat">-->

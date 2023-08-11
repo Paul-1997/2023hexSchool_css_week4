@@ -1,15 +1,18 @@
-
-@each $item in $display{
-	.d-#{$item}{
+@each $item in $display {
+	.d-#{$item} {
 		display: $item;
 	}
-	@include pad {
-		.d-md-#{$item}{
+}
+@include pad {
+	@each $item in $display {
+		.d-md-#{$item} {
 			display: $item;
 		}
 	}
-	@include mobile {
-		.d-sm-#{$item}{
+}
+@include mobile {
+	@each $item in $display {
+		.d-sm-#{$item} {
 			display: $item;
 		}
 	}
