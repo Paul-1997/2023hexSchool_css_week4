@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/gif" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABoUlEQVQ4jXWTMUiVURiG3+/ncrmIg0hEw52aHELESaTJIsJBGpxCcmsW2wVxEIdLg1NENEXUEiFi4aDQEFeIaHKQS6AXGkokiEDK93HwHPj5+e+3nPPx/Of93nO+/5Mk2R4GngE94BVwTaUA2rbfJd4BmmUo2++Bnu0O8A3oAo0k3gIOga7tp8AJ8KIsMAMcASMpbyWBhSSwBHzMgsAN4AcwngWeA48qlu8C22nfBSYqfBlYz8nXmjs3gO95ta0KHwN2lSweqSbStU5sf65hQ8C57cMiIgQUNRqFpLcR0axhTUm/ImKkkNQHxioVRiX9l/QEuG67KjIu6QD4U0jak7RY+eChpP2IUEQcRMR8pcCipOOI6AtoA7+B2QSngDNgMuUzuW22BSwAp6kTnaz4GLgAfnIVa+WKtjcTPwX+AfPADnCvbGsaWAXu294ChktMwBywAkzavpX+yEbNA0vAa2BzAGsAn4Dl2sPJcjvZXSm32PYQ8Mb2lzxQMUgEuC1pW1Jf0gdJLUkPJP2VdCcijgc6KFW8aful7V6ayI08dDkuAZk9u87wCvzhAAAAAElFTkSuQmCC" />
-    <title>Glasses</title>
-    <script type="module" crossorigin src="/2023hexSchool_css_week4/assets/main-44a3184e.js"></script>
-    <link rel="stylesheet" href="/2023hexSchool_css_week4/assets/main-42fc1519.css">
-  </head>
-  <body>
-
-  <header class="header bg-primary text-white" id="header">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/gif" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABoUlEQVQ4jXWTMUiVURiG3+/ncrmIg0hEw52aHELESaTJIsJBGpxCcmsW2wVxEIdLg1NENEXUEiFi4aDQEFeIaHKQS6AXGkokiEDK93HwHPj5+e+3nPPx/Of93nO+/5Mk2R4GngE94BVwTaUA2rbfJd4BmmUo2++Bnu0O8A3oAo0k3gIOga7tp8AJ8KIsMAMcASMpbyWBhSSwBHzMgsAN4AcwngWeA48qlu8C22nfBSYqfBlYz8nXmjs3gO95ta0KHwN2lSweqSbStU5sf65hQ8C57cMiIgQUNRqFpLcR0axhTUm/ImKkkNQHxioVRiX9l/QEuG67KjIu6QD4U0jak7RY+eChpP2IUEQcRMR8pcCipOOI6AtoA7+B2QSngDNgMuUzuW22BSwAp6kTnaz4GLgAfnIVa+WKtjcTPwX+AfPADnCvbGsaWAXu294ChktMwBywAkzavpX+yEbNA0vAa2BzAGsAn4Dl2sPJcjvZXSm32PYQ8Mb2lzxQMUgEuC1pW1Jf0gdJLUkPJP2VdCcijgc6KFW8aful7V6ayI08dDkuAZk9u87wCvzhAAAAAElFTkSuQmCC" />
+		<title>Glasses</title>
+		<script type="module" crossorigin src="/2023hexSchool_css_week4/assets/main-86d98c04.js"></script>
+		<link rel="stylesheet" href="/2023hexSchool_css_week4/assets/main-82b839e0.css">
+	</head>
+	<body>
+		<header class="header bg-primary text-white" id="header">
     <div class="header-content container d-flex justify-content-between align-items-center flex-direction-sm-column">
         <div class="logo py-5 align-self-sm-start ps-sm-5">
             <a href="./home.html">眼鏡官網</a>
@@ -24,10 +23,73 @@
         </ul>
     </div>
 </header>
-    <main>
-
-    </main>
-    <footer class="footer bg-primary text-white pt-9 pb-7 pb-md-8 py-sm-6" id="footer">
+		<main>
+			<div class="container pt-12 pb-11 py-md-11 pt-sm-8 pb-sm-10">
+				<h2
+					class="store-title fw-blod page-title-styled fz-5xl fz-sm-xl mb-7 mb-sm-6"
+				>
+					門市據點
+				</h2>
+				<label
+					for="selectArea"
+					class="store-selector fz-xl d-block mb-8 mb-sm-6 fz-sm-md"
+					>選擇分店
+					<select
+						name="selectArea"
+						id="selectArea"
+						class="ms-4 ms-sm-3 py-2 px-4 text-gray-dark"
+					>
+						<optgroup label="北部">
+							<option value="中山店" selected>台北中山旗艦店</option>
+							<option value="綠園店">台北綠園店</option>
+						</optgroup>
+						<optgroup label="中部">
+							<option value="清水店">台中清水旗艦店</option>
+						</optgroup>
+						<optgroup label="南部">
+							<option value="中正形象店">高雄中正形象店</option>
+							<option value="夢時代店">高雄夢時代店</option>
+						</optgroup>
+					</select>
+				</label>
+				<div class="store-content d-flex flex-direction-md-column">
+					<div
+						class="store-card d-md-flex flex-direction-md-row flex-wrap-md-wrap flex-direction-sm-column"
+					>
+						<img src="/2023hexSchool_css_week4/assets/storepage-1-bd842520.png" alt="store-taipei-1" />
+						<div class="store-card-item">
+							<h2 class="card-name fz-xl py-4 px-6">台北中山旗艦店</h2>
+							<ul class="card-content py-5 px-6">
+								<li class="d-flex align-items-center mb-3">
+									<span class="material-icons-outlined me-3"> call </span>
+									<p class="fz-lg">電話：(02)000-1234</p>
+								</li>
+								<li class="d-flex align-items-center mb-3">
+									<span class="material-icons-outlined me-3"> schedule </span>
+									<p class="fz-lg">營業時間：10:00-21:00</p>
+								</li>
+								<li class="d-flex align-items-center">
+									<span class="material-icons-outlined me-3 align-self-start">
+										location_on
+									</span>
+									<p class="fz-lg">地址：台北市中山區南京東路25巷2-1號</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="store-map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.5892362358777!2d121.4647582751444!3d25.014069939094238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a81eef069bf7%3A0xcd9504020d005103!2z5p2_5qmL5aSn6YGg55m-!5e0!3m2!1szh-TW!2stw!4v1691426083398!5m2!1szh-TW!2stw"
+							style="border: 0; width: 100%; height: 100%"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer bg-primary text-white pt-9 pb-7 pb-md-8 py-sm-6" id="footer">
     <div class="container mb-7 mb-sm-5">
         <div class="footer-content d-sm-flex flex-direction-sm-row-reverse justify-content-sm-between align-items-start">
             <div class="d-flex justify-content-between align-items-center mb-6">
@@ -84,6 +146,6 @@
         </div>
     </div>
 </footer>
-    
-  </body>
+		
+	</body>
 </html>

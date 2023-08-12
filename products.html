@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/gif" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABoUlEQVQ4jXWTMUiVURiG3+/ncrmIg0hEw52aHELESaTJIsJBGpxCcmsW2wVxEIdLg1NENEXUEiFi4aDQEFeIaHKQS6AXGkokiEDK93HwHPj5+e+3nPPx/Of93nO+/5Mk2R4GngE94BVwTaUA2rbfJd4BmmUo2++Bnu0O8A3oAo0k3gIOga7tp8AJ8KIsMAMcASMpbyWBhSSwBHzMgsAN4AcwngWeA48qlu8C22nfBSYqfBlYz8nXmjs3gO95ta0KHwN2lSweqSbStU5sf65hQ8C57cMiIgQUNRqFpLcR0axhTUm/ImKkkNQHxioVRiX9l/QEuG67KjIu6QD4U0jak7RY+eChpP2IUEQcRMR8pcCipOOI6AtoA7+B2QSngDNgMuUzuW22BSwAp6kTnaz4GLgAfnIVa+WKtjcTPwX+AfPADnCvbGsaWAXu294ChktMwBywAkzavpX+yEbNA0vAa2BzAGsAn4Dl2sPJcjvZXSm32PYQ8Mb2lzxQMUgEuC1pW1Jf0gdJLUkPJP2VdCcijgc6KFW8aful7V6ayI08dDkuAZk9u87wCvzhAAAAAElFTkSuQmCC" />
-    <title>Glasses</title>
-    <script type="module" crossorigin src="/2023hexSchool_css_week4/assets/main-44a3184e.js"></script>
-    <link rel="stylesheet" href="/2023hexSchool_css_week4/assets/main-42fc1519.css">
-  </head>
-  <body>
-
-  <header class="header bg-primary text-white" id="header">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/gif" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABoUlEQVQ4jXWTMUiVURiG3+/ncrmIg0hEw52aHELESaTJIsJBGpxCcmsW2wVxEIdLg1NENEXUEiFi4aDQEFeIaHKQS6AXGkokiEDK93HwHPj5+e+3nPPx/Of93nO+/5Mk2R4GngE94BVwTaUA2rbfJd4BmmUo2++Bnu0O8A3oAo0k3gIOga7tp8AJ8KIsMAMcASMpbyWBhSSwBHzMgsAN4AcwngWeA48qlu8C22nfBSYqfBlYz8nXmjs3gO95ta0KHwN2lSweqSbStU5sf65hQ8C57cMiIgQUNRqFpLcR0axhTUm/ImKkkNQHxioVRiX9l/QEuG67KjIu6QD4U0jak7RY+eChpP2IUEQcRMR8pcCipOOI6AtoA7+B2QSngDNgMuUzuW22BSwAp6kTnaz4GLgAfnIVa+WKtjcTPwX+AfPADnCvbGsaWAXu294ChktMwBywAkzavpX+yEbNA0vAa2BzAGsAn4Dl2sPJcjvZXSm32PYQ8Mb2lzxQMUgEuC1pW1Jf0gdJLUkPJP2VdCcijgc6KFW8aful7V6ayI08dDkuAZk9u87wCvzhAAAAAElFTkSuQmCC" />
+		<title>Glasses</title>
+		<script type="module" crossorigin src="/2023hexSchool_css_week4/assets/main-86d98c04.js"></script>
+		<link rel="stylesheet" href="/2023hexSchool_css_week4/assets/main-82b839e0.css">
+	</head>
+	<body>
+		<header class="header bg-primary text-white" id="header">
     <div class="header-content container d-flex justify-content-between align-items-center flex-direction-sm-column">
         <div class="logo py-5 align-self-sm-start ps-sm-5">
             <a href="./home.html">眼鏡官網</a>
@@ -24,10 +23,381 @@
         </ul>
     </div>
 </header>
-    <main>
-
-    </main>
-    <footer class="footer bg-primary text-white pt-9 pb-7 pb-md-8 py-sm-6" id="footer">
+		<main>
+			<nav class="">
+				<ul
+					class="product-nav container text-center d-flex justify-content-between"
+				>
+					<li class="fz-2xl fz-md-xl">
+						<label for="OPTICAL" class="fw-medium d-block py-6 py-sm-5">
+							<input
+								type="radio"
+								class="d-none"
+								name="glasses-type"
+								id="OPTICAL"
+								value="OPTICAL"
+								checked
+							/>
+							OPTICAL
+						</label>
+					</li>
+					<li class="fz-2xl fz-md-xl">
+						<label for="SUNGLASSES" class="fw-medium d-block py-6 py-sm-5">
+							<input
+								type="radio"
+								class="d-none"
+								name="glasses-type"
+								id="SUNGLASSES"
+								value="SUNGLASSES"
+							/>
+							SUNGLASSES
+						</label>
+					</li>
+					<li class="fz-2xl fz-md-xl">
+						<label for="FUNCTIONAL" class="fw-medium d-block py-6 py-sm-5">
+							<input
+								type="radio"
+								class="d-none"
+								name="glasses-type"
+								id="FUNCTIONAL"
+								value="FUNCTIONAL"
+							/>
+							FUNCTIONAL
+						</label>
+					</li>
+				</ul>
+			</nav>
+			<div class="product-banner">
+				<div class="banner-lg d-md-none">
+					<div data-show="optical" class="d-flex">
+						<img
+							src="/2023hexSchool_css_week4/assets/product-header-1-7276f627.png"
+							alt="optical_glasses"
+						/>
+						<img
+							src="/2023hexSchool_css_week4/assets/product-header-2-5a94740e.png"
+							alt="optical_glasses"
+						/>
+					</div>
+					<div data-show="sunglasses" class="d-flex">
+						<img src="/2023hexSchool_css_week4/assets/product-header-3-93e97d5b.png" alt="sunglasses" />
+						<img src="/2023hexSchool_css_week4/assets/product-header-4-f1b40d06.png" alt="sunglasses" />
+					</div>
+				</div>
+				<div class="banner-sm d-none d-md-block">
+					<div data-show="optical" class="d-flex">
+						<img
+							src="/2023hexSchool_css_week4/assets/product-header-sm-1-685f0248.png"
+							alt="optical_glasses"
+						/>
+						<img
+							src="/2023hexSchool_css_week4/assets/product-header-sm-2-cf245c78.png"
+							alt="optical_glasses"
+						/>
+					</div>
+					<div data-show="sunglasses" class="d-flex">
+						<img
+							src="/2023hexSchool_css_week4/assets/product-header-sm-3-4d38c089.png"
+							alt="sunglasses"
+						/>
+						<img
+							src="/2023hexSchool_css_week4/assets/product-header-sm-4-2f9c0fb5.png"
+							alt="sunglasses"
+						/>
+					</div>
+				</div>
+			</div>
+			<div
+				class="product-content container pt-12 pb-11 py-md-11 pt-sm-8 pb-sm-10"
+			>
+				<h1 class="text-center fz-2xl fz-sm-xl mb-7 mb-sm-6">
+					<div data-show="optical">
+						<p class="product-title fw-medium">Celluloid Combi</p>
+						<p>賽璐珞鈦金屬混合鏡框</p>
+					</div>
+					<div data-show="sunglasses">
+						<p class="product-title fw-medium">2020 NEW COLLECTION</p>
+						<p>賽璐珞鈦金屬混合鏡框</p>
+					</div>
+				</h1>
+				<div class="product-list">
+					<ul
+						class="optical d-flex flex-wrap-wrap align-items-center"
+						data-show="optical"
+					>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-1-662ad794.png"
+								alt="產品圖片1"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								<span>BJ41600S</span
+								><span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-2-44439c2d.png"
+								alt="產品圖片2"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-3-0fcb9ea9.png"
+								alt="產品圖片3"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-4-3b774934.png"
+								alt="產品圖片4"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-5-2f18dee7.png"
+								alt="產品圖片5"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-6-06aeb50f.png"
+								alt="產品圖片6"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-1-662ad794.png"
+								alt="產品圖片7"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-2-44439c2d.png"
+								alt="產品圖片8"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-3-0fcb9ea9.png"
+								alt="產品圖片9"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-4-3b774934.png"
+								alt="產品圖片10"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-5-2f18dee7.png"
+								alt="產品圖片11"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-6-06aeb50f.png"
+								alt="產品圖片12"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+					</ul>
+					<ul
+						class="sunglasses d-flex flex-wrap-wrap align-items-center"
+						data-show="sunglasses"
+					>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-7-d12814bd.png"
+								alt="產品圖片13"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-8-9da5a941.png"
+								alt="產品圖片14"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-9-0e90356e.png"
+								alt="產品圖片15"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-10-dc3e0f3f.png"
+								alt="產品圖片16"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-11-0f8ac353.png"
+								alt="產品圖片17"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+						<li>
+							<img
+								src="/2023hexSchool_css_week4/assets/product-12-995bcd13.png"
+								alt="產品圖片18"
+								loading="lazy"
+							/>
+							<h2 class="d-flex justify-content-between fz-xl">
+								BJ41600S<span class="fw-medium text-red">NTD3,490</span>
+							</h2>
+							<div class="glasses-themes d-flex">
+								<a href="#" data-color="brown" class="me-3"></a>
+								<a href="#" data-color="orange"></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="pagination container d-flex justify-content-center mb-11 mb-sm-10">
+      <ul class="pagination-ul d-flex">
+        <li class="pre text-gray-mid"><a href="#">上一頁</a></li>
+        <li class="text-gray-mid"><a href="#">1</a></li>
+        <li class="active text-gray-mid"><a href="#">2</a></li>
+        <li class="text-gray-mid"><a href="#">3</a></li>
+        <li class="text-gray-mid"><a href="#">4</a></li>
+        <li class="text-gray-mid"><a href="#">5</a></li>
+        <li class="next text-gray-mid"><a href="#">下一頁</a></li>
+      </ul>
+    </div>		</main>
+		<footer class="footer bg-primary text-white pt-9 pb-7 pb-md-8 py-sm-6" id="footer">
     <div class="container mb-7 mb-sm-5">
         <div class="footer-content d-sm-flex flex-direction-sm-row-reverse justify-content-sm-between align-items-start">
             <div class="d-flex justify-content-between align-items-center mb-6">
@@ -84,6 +454,6 @@
         </div>
     </div>
 </footer>
-    
-  </body>
+		
+	</body>
 </html>
