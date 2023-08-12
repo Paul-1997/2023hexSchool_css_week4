@@ -1,32 +1,18 @@
 
 .store-content {
 	gap: 24px;
-
-	@include pad {
-		flex-direction: column;
-	}
-
 	.store-card {
-		flex-direction: column;
 		width: calc((100% / 12 * 5) - 12px); //col-5
-
 		@include pad {
-			flex-direction: row;
-			flex-wrap: wrap;
 			width: 100%;
-			display: flex;
 			gap: 24px;
-
-			.store-card-item,
-			img {
+			& > * {
 				width: calc(50% - 12px);
 			}
 		}
 		@include mobile {
-			flex-direction: column;
-
-			.store-card-item,
-			img {
+			gap:0;
+			& > * {
 				width: 100%;
 			}
 		}

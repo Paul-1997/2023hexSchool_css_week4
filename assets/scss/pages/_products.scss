@@ -24,22 +24,20 @@
 }
 
 .product-nav {
-	justify-content: space-between;
-
+	@include pad {
+		padding-inline: 0;
+		max-width: 100%;
+	}
 	li {
 		width: calc(100% / 3);
-		border: 1px solid #dcdcdc;
-		font-size: 32px;
+		border: 1px solid $gray-200;
 		&:not(:last-child) {
 			border-right: 0;
 		}
 		label {
 			cursor: pointer;
-			padding-block: 24px;
-			display: block;
 		}
 		input {
-			display: none;
 			height: 0px;
 			width: 0px;
 		}
@@ -50,165 +48,54 @@
 	}
 }
 
-.product-banner {
-	img {
-		width: 50%;
-		object-fit: cover;
-	}
-	.banner-lg {
-		@include pad {
-			display: none;
-		}
-	}
-	.banner-sm {
-		display: none;
-
-		@include pad {
-			display: block;
-		}
-	}
+.product-banner img {
+	width: 50%;
+	object-fit: cover;
 }
-
-.product-content {
-	h1 {
-		font-size: 32px;
-		.product-title {
-			font-size: 42px;
-		}
+.product-title {
+	font-size: 42px;
+	@include mobile {
+		font-size: 24px;
 	}
 }
 
 .product-list {
 	ul {
-		display: flex;
-		flex-wrap: wrap;
+		//共通
 		gap: 24px;
 		row-gap: 80px;
-		align-items: center;
-		h2 {
-			font-size: 24px;
-			justify-content: space-between;
+		@include mobile {
+			row-gap: 24px;
 		}
-		.glasses-colors a {
-			display: inline-block;
+		.glasses-themes a {
 			width: 24px;
 			aspect-ratio: 1;
 			border-radius: 4px;
-
-			&:first-child {
-				background: #5f3e2d;
-				margin-right: 8px;
+			&[data-color='brown'] {
+				background: $brown;
 			}
-			&:last-child {
-				background: #b75929;
+			&[data-color='orange'] {
+				background: $orange;
 			}
 		}
-	}
-	//個別樣式
-	.optical {
 		li {
-			// n-1個gutter 要扣掉
-			width: calc(25% - (24px * 3 / 4));
-		}
-	}
-	.sunglasses {
-		li {
-			width: calc(100% / 3 - (24px * 2 / 3));
-		}
-	}
-}
-
-.pagination {
-	justify-content: center;
-	margin-bottom: 80px;
-
-	.pagination-ul {
-		align-items: center;
-		li {
-			border: 1px solid #555555;
-			a {
-				font-size: 18px;
-				display: block;
-				padding: 12px 16px;
+			@include pad {
+				width: calc(50% - 12px);
 			}
-			&:is(.pre, .next) a {
-				padding: 11px 12px;
-				font-size: 19px;
-				line-height: 29px;
-			}
-			&.active {
-				background: #000;
-				color: white;
-			}
-			@include hover {
-				&:not(.active) {
-					background-color: #f2f2f2;
-				}
+			@include mobile {
+				width: 100%;
 			}
 		}
 	}
 }
-
-@include pad {
-	.product-nav {
-		margin-inline: -36px;
-		li {
-			font-size: 24px;
-			label {
-				padding-block: 16px;
-			}
-		}
-	}
-	.product-list {
-		.optical li,
-		.sunglasses li {
-			width: calc(50% - 12px);
-		}
+//個別樣式
+.optical {
+	li {
+		width: calc(25% - (24px * 3 / 4));
 	}
 }
-@include mobile {
-	.product-nav {
-		margin-inline: -15px;
-		li {
-			font-size: max(16px, 3vw);
-		}
-	}
-	.product-content {
-		h1 {
-			margin-bottom: 24px;
-			&,
-			.product-title {
-				font-size: 24px;
-			}
-		}
-	}
-	.product-list {
-		ul {
-			row-gap: 24px;
-		}
-		.optical li,
-		.sunglasses li {
-			width: 100%;
-		}
-	}
-	.pagination-ul li {
-		a,
-		&:is(.pre, .next) a {
-			font-size: 16px;
-		}
-		&:is(.pre, .next) a {
-			line-height: 26px;
-		}
-	}
-}
-
-@media (max-width: 390px) {
-	.pagination-ul li {
-		a {
-			padding: 6px 8px;
-		}
-		&:is(.pre, .next) a {
-			padding: 5px 8px;
-		}
+.sunglasses {
+	li {
+		width: calc(100% / 3 - (24px * 2 / 3));
 	}
 }
