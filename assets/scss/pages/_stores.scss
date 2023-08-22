@@ -24,6 +24,10 @@
         }
     }
 }
+
+.store-card img{
+     object-fit: cover;
+}
 .store-card-item{
     &,& > *{
         border: 1px solid $gray-400;
